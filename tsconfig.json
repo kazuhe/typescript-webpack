@@ -2,7 +2,8 @@
   "compilerOptions": {
     
     "target": "es5", // コンパイルしたいECMAScriptのバージョンを指定
-    "module": "es2015", // TSのモジュールはES Modulesとして出力
+    "module": "es2015", // TSCがどのモジュールシステム（CommonJS, ES2015など）にコンパイルするか指定
+    "strict": true, // 不正なコードを厳格にチェック
 
     // "declaration": true, // コンパイル時に型定義ファイル「.d.ts」を生成する
     // "declarationMap": true, // 型定義ファイルのソースマップを生成する
