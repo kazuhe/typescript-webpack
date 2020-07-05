@@ -1,4 +1,4 @@
-import { Person } from './person';
+import { Person } from './person'
 
-const kazuhe = new Person('kazuhe', 25);
-kazuhe.greeting();
+const kazuhe = new Person('kazuhe', 25)
+kazuhe.greeting()

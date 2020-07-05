@@ -2,17 +2,20 @@
 TypeScript + webpack の基本セット
 
 ## How to use
-```
-v12.17.0
-```
-
-## Node.js version
-```
+``` bash
 # Watch
 $ npm run watch
 
+# Lint
+$ npm run lint 
+
 # Build
 $ npm run build 
+```
+
+## Node.js version
+``` bash
+v12.17.0
 ```
 
 ## Git commit rule
