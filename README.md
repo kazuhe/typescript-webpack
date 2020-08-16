@@ -4,7 +4,7 @@ TypeScript + webpack の基本セット
 ## How to use
 ``` bash
 # Watch
-$ yarn run watch
+$ yarn run serve
 
 # Lint
 $ yarn run lint 

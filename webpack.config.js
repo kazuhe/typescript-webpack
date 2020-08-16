@@ -7,6 +7,16 @@ module.exports = {
   // Source Map の種類
   devtool: 'inline-source-map',
 
+  // webpack-dev-serverの設定
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'), // コンテンツ(静的ファイル)のルートディレクトリ
+    watchContentBase: true, // contentBase以下ファイルに変更があった場合ブラウザ全体リロード
+    publicPath: '/assets/', // contentBaseから見たバンドル先のディレクトリ
+    open: true, // ブラウザ自動起動
+    host: '0.0.0.0', // 外部からのアクセスを許可
+    useLocalIp: true, // ローカルIPでブラウザーを開く
+  },
+
   // production or development
   mode: 'development',
 
@@ -29,6 +39,6 @@ module.exports = {
   // 出力先
   output: {
     filename: 'bundle.js',
-    path: path.resolve(__dirname, 'dist', 'js'),
+    path: path.resolve(__dirname, 'dist', 'assets'),
   },
 }

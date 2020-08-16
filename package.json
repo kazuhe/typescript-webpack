@@ -4,11 +4,13 @@
   "description": "",
   "main": "webpack.config.js",
   "scripts": {
+    "serve": "webpack-dev-server",
     "build": "webpack",
-    "watch": "webpack -w",
     "lint": "eslint . --ext ts --fix"
   },
-  "dependencies": {},
+  "dependencies": {
+    "webpack-dev-server": "^3.11.0"
+  },
   "devDependencies": {
     "@types/node": "^14.0.6",
     "@typescript-eslint/eslint-plugin": "^3.5.0",
